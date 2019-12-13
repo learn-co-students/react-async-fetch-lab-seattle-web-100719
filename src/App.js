@@ -17,16 +17,10 @@ export class App extends Component {
             })
     }
 
-    displayPeople = () => {
-        if (this.state.people.length !== 0) {
-            return <People people={this.state.people} />
-        }
-    }
-
     render() {
         return (
             <div>
-                {this.displayPeople()}
+                <People people={this.state.people} />
             </div>
         )
     }

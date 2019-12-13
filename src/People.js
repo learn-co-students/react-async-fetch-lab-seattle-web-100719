@@ -3,8 +3,8 @@ import Person from './Person'
 
 export class People extends Component {
     getPeople = () => {
-        return this.props.people.map(person => {
-            return <Person person={person} />
+        return this.props.people.map((person, index) => {
+            return <Person person={person} key={index} />
         })
     }
     render() {
